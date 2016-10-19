@@ -8,7 +8,13 @@ import { Component } from '@angular/core';
 			<a [routerLink]="['/']">Home</a>
 			<a [routerLink]="['/teste']">Teste</a>
 		</div>
-		<router-outlet></router-outlet>
+		<div>
+			<hr />
+			<router-outlet></router-outlet>
+			<div>
+				...
+			</div>
+		</div>
 	`
 })
 export class AppComponent {

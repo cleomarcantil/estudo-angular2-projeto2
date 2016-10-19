@@ -8,6 +8,9 @@ import { Router, ActivatedRoute } from '@angular/router';
 	template: `
 		<p>Comonente Teste</p>
 		<div>
+			<input type="text" />
+		</div>
+		<div>
 			<a [routerLink]="['/teste', { a:1, b:2 }]">Link 1</a>
 			<a [routerLink]="['/teste', { a:1, c: [ 4, 2 ] }]">Link 2</a>
 
@@ -33,8 +36,9 @@ export class TesteComponent implements OnInit {
 	ngOnInit() { }
 
 	mudarParametro(params:Object) {
-		params = Object.assign({}, this.currentParams, params);
+		params = Object.assign({}, this.currentParams, params, { "n-x": 75 });
 
+		params["n-a"] = 89;
 
 		this.router.navigate(['/teste', params]);
 	}
