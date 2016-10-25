@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { AuthService } from './auth.service';
+
 @Component({
 	selector: 'my-app',
 	template: `
@@ -7,6 +9,8 @@ import { Component } from '@angular/core';
 		<div>
 			<a [routerLink]="['/']">Home</a>
 			<a [routerLink]="['/teste']">Teste</a>
+
+			<button (click)="authService.logout()" *ngIf="authService.isLoggedIn" style="float: right;">Logout</button>
 		</div>
 		<div>
 			<hr />
@@ -18,5 +22,7 @@ import { Component } from '@angular/core';
 	`
 })
 export class AppComponent {
+	
+	constructor(public authService: AuthService) { }
 	
 }
