@@ -4,6 +4,9 @@
 	<title>Angular QuickStart</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="styles.css">
 	
 	<!-- 1. Load libraries -->
@@ -21,6 +24,17 @@
 </head>
 <!-- 3. Display the application -->
 <body>
+    <!--[if (!IE)|(gt IE 8)]><!-->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!--<![endif]-->
+
+    <!--[if lte IE 8]>
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script> -->
+    <!-- <![endif]-->
+
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
 	<my-app>Loading...</my-app>
 </body>
 </html>
