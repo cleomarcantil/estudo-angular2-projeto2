@@ -12,6 +12,7 @@ _test-output
 _temp
 debug.log
 dist
+build
 
 !karma*.js
 !protractor*.js
