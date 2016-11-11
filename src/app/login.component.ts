@@ -4,7 +4,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { AuthService } from './auth.service';
 
 @Component({
-	moduleId: module.id,
+	//moduleId: module.id,
 	template: `
         <h2>LOGIN</h2>
         <p>

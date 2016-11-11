@@ -3,7 +3,7 @@ import { URLSearchParams } from '@angular/http';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
-	moduleId: module.id,
+	//moduleId: module.id,
 	selector: 'teste',
 	template: `
 		<p>Comonente Teste</p>
