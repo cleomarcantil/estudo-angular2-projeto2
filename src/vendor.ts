@@ -11,3 +11,8 @@ import '@angular/router';
 
 // RxJS
 import 'rxjs';
+
+
+// CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.css';
